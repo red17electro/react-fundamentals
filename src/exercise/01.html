@@ -17,8 +17,10 @@
 
 <html>
   <body>
-    <div id="root"></div>
     <script type="module">
+      const rootNode = document.createElement('div')
+      rootNode.id = 'root'
+      document.getElementsByTagName('BODY')[0].append(rootNode)
       const div = document.createElement('div')
       div.textContent = 'Hello World!'
       div.className = 'container'
